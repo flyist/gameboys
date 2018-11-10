@@ -3,3 +3,5 @@
 gradle
 gameboys.iml
 .DS_Store
+build/
+out/
