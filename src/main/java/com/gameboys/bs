@@ -1,0 +1,6 @@
+curl -X POST https://id.twitch.tv/oauth2/token
+    --data-urlencode
+    ?grant_type=refresh_token
+    &refresh_token=eyJfaWQmNzMtNGCJ9%6VFV5LNrZFUj8oU231/3Aj
+    &client_id=2bhdr0lj7vvoqoy4g7lt8cma8jpl90
+    &client_secret=euefauk2kaewwscxc6md9d9asz82bk
