@@ -1,28 +1,20 @@
+apply plugin: 'java'
+apply plugin: 'maven'
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+jar {
+    manifest {
+        attributes 'Main-Class': 'Main'
+    }
+}
+
 repositories {
     mavenCentral()
 }
 
-apply plugin: 'java'
-
-sourceSets {
-    main {
-        java {
-            srcDir 'src'
-        }
-    }
-    test {
-        java {
-            srcDir 'test'
-        }
-    }
-}
-
 dependencies {
-    testCompile group: 'junit', name: 'junit', version: '4.+'
-}
-
-version = '1.0'
-
-jar {
-    manifest.attributes provider: 'gradle'
+    compile group: 'org.pircbotx', name: 'pircbotx', version: '2.0.1'
+    compile group: 'org.json', name: 'json', version: '20090211'
+    compile group: 'com.google.guava', name: 'guava', version: '16+'
 }
